@@ -1,32 +1,43 @@
 ﻿<html>
-  <body>
+<body>
     <div id="parameters">
-      Cities count:
-      <input type="text" id="txtCities" value="20" />
-      Population size:
-      <input type="text" id="txtPopulation" value="10" />
-	  Mutations value:
-      <input type="text" id="txtMutations" value="0.5" />
-      Iterations count:
-      <input type="text" id="txtIterations" value="10000" />
-      <input type="button" value="Go" id="btnGo"/>
+        Cities count:
+        <input type="text" id="txtCities" value="100" />
+        Population size:
+        <input type="text" id="txtPopulation" value="10" />
+        Mutations value:
+        <input type="text" id="txtMutations" value="0.5" />
+        Iterations count:
+        <input type="text" id="txtIterations" value="100000" />
+        <input type="button" value="Go" id="btnGo" />
     </div>
     <div id="statsGenetic">
-      Genetic: <span id="lblGeneticResult"></span>
-	  <canvas id="canvasGenetic" width="500" height="500"></canvas>
+        Genetic: <span id="lblGeneticResult"></span>
+        <canvas id="canvasGenetic" width="500" height="500"></canvas>
     </div>
-	<div id="statsGreedy">
-      Greedy: <span id="lblGreedyResult"></span>
-	  <canvas id="canvasGreedy" width="500" height="500"></canvas>
+    <div id="statsGreedy">
+        Greedy: <span id="lblGreedyResult"></span>
+        <canvas id="canvasGreedy" width="500" height="500"></canvas>
     </div>
     <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
     <script src="genetic.js"></script>
     <script src="salesman.js"></script>
     <script src="test.js"></script>
-	<style>
-	  canvas{margin-top:20px; display:block;}
-	  #statsGenetic{margin:20px 100px 0 0; float:left;}
-	  #statsGreedy{margin:20px 0 0 0; float:left;}
-	</style>
-  </body>
+    <style>
+        canvas {
+            margin-top: 20px;
+            display: block;
+        }
+
+        #statsGenetic {
+            margin: 20px 100px 0 0;
+            float: left;
+        }
+
+        #statsGreedy {
+            margin: 20px 0 0 0;
+            float: left;
+        }
+    </style>
+</body>
 </html>
